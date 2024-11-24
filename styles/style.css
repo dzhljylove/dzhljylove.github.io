@@ -1,0 +1,55 @@
+html{
+    background-color:rgb(254, 58, 156);
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Initial styling for the image */
+  img {
+    width: 200px;
+    height: 200px;
+    transition: width 2s ease, height 2s ease;
+    cursor: pointer;
+    will-change: transform; /* Hint the browser that this element will rotate */
+  }
+  
+  /* Scale up animation on hover */
+  img:hover {
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* Define the spin animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Spin faster by reducing duration to 1 second */
+  img.spinning {
+    animation: spin 0.5s linear infinite; /* 1 second duration */
+  }
+
+  h1{
+    
+    font-size:55px;
+    text-align:center;
+}
+h2{
+    display:block;
+    font-size:35px;
+
+}
+p{
+    display:block;
+    margin-left:2px;
+    text-align: center;
+}
