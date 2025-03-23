@@ -7,7 +7,9 @@ html{
     align-items: center;
     height: 100vh;
   }
-  
+  p1{
+    align-items: left;
+  }
   /* Initial styling for the image */
   img {
     width: 200px;
